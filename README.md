@@ -1,7 +1,7 @@
-# The North Face e-commerce — NLP, Clustering & Recommendation
+# The North Face e-commerce - NLP, Clustering & Recommendation
 
 > Mandatory project for **block 3** (Predictive analysis of structured data with
-> artificial intelligence) of the French **CDSD certification** — Concepteur
+> artificial intelligence) of the French **CDSD certification** - Concepteur
 > Développeur en Science des Données | RNCP35288 | JEDHA
 
 NLP analysis of a catalogue of **500 product descriptions** to help The North Face
@@ -31,10 +31,10 @@ python -m spacy download en_core_web_sm
 
 ## Technical stack
 
-- Python — Pandas, NumPy, Matplotlib
-- spaCy (`en_core_web_sm`) — text preprocessing & lemmatisation
-- scikit-learn — TfidfVectorizer, DBSCAN, TruncatedSVD, cosine_similarity, silhouette_score
-- wordcloud — cluster & topic visualisation
+- Python - Pandas, NumPy, Matplotlib
+- spaCy (`en_core_web_sm`) - text preprocessing & lemmatisation
+- scikit-learn - TfidfVectorizer, DBSCAN, TruncatedSVD, cosine_similarity, silhouette_score
+- wordcloud - cluster & topic visualisation
 
 ## Usage
 
@@ -67,17 +67,17 @@ Projet_TheNorthFace/
 
 ## Approach
 
-1. **Loading & text cleaning** — stripping HTML tags, HTML entities, digits and punctuation
-2. **NLP preprocessing (spaCy)** — lowercasing, stop-word removal, lemmatisation,
+1. **Loading & text cleaning** - stripping HTML tags, HTML entities, digits and punctuation
+2. **NLP preprocessing (spaCy)** - lowercasing, stop-word removal, lemmatisation,
    dropping tokens of 2 characters or less
-3. **TF-IDF vectorisation** — `max_features=600`, `min_df=2`
-4. **Part 1 — Product clustering (DBSCAN)** — density-based grouping with cosine
+3. **TF-IDF vectorisation** - `max_features=600`, `min_df=2`
+4. **Part 1 - Product clustering (DBSCAN)** - density-based grouping with cosine
    distance, no preset number of clusters, outliers labelled `-1`; quality assessed
    with the silhouette score and interpreted via a wordcloud per cluster
-5. **Part 2 — Recommendation system** — `find_similar_items()` returns 5 similar
+5. **Part 2 - Recommendation system** - `find_similar_items()` returns 5 similar
    products from the same cluster, falling back to cosine similarity for outliers;
    interactive lookup via `input()`
-6. **Part 3 — Topic extraction (LSA / TruncatedSVD)** — 15 latent topics, each
+6. **Part 3 - Topic extraction (LSA / TruncatedSVD)** - 15 latent topics, each
    product associated with a mix of themes, dominant topic retained, one wordcloud per topic
 
 ## Key findings
@@ -103,6 +103,6 @@ Projet_TheNorthFace/
 
 ## Author
 
-**Geoffrey MADALINSKI** — Certification CDSD (RNCP35288) - JEDHA
+**Geoffrey MADALINSKI** - Certification CDSD (RNCP35288) - JEDHA
 
 ---
