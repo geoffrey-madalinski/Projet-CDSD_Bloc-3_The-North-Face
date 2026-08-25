@@ -19,7 +19,7 @@ relevant than the existing categories.
 ## Installation
 
 ```bash
-git clone https://github.com/geoffrey-madalinski/Projet_TheNorthFace.git
+git clone https://github.com/geoffrey-madalinski/Projet-CDSD_Bloc-3_The-North-Face.git
 cd Projet_TheNorthFace
 ```
 
