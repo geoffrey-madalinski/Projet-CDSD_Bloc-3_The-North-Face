@@ -20,7 +20,7 @@ relevant than the existing categories.
 
 ```bash
 git clone https://github.com/geoffrey-madalinski/Projet-CDSD_Bloc-3_The-North-Face.git
-cd Projet_TheNorthFace
+cd Projet-CDSD_Bloc-3_The-North-Face
 ```
 
 The spaCy English model is required for lemmatisation:
